@@ -1,0 +1,174 @@
+@import 'mixins';
+@import 'partials';
+@import 'typography';
+@import 'variables';
+
+//------------------------------
+// Site-wide styling
+//------------------------------
+
+html {
+    background-color: White;
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, hr, ul, li, img, p, label, input {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+// a {
+//     color: $links-color;
+// }
+
+//======================================
+
+//------------------------------
+// Site-wide elements
+//------------------------------
+
+// button {
+//     @include font($poppins, 2.0rem, 500);
+//     background-color: $bg-fill-1;
+//     border-radius: 7px;
+//     border-style: none;
+//     color: White;
+//     cursor: pointer;
+//     height: 60px;  
+
+//     &:hover {
+//         background-color: $button-hover;
+//       }    
+// }
+
+// label {
+//     @include font($body-font, 2.0rem, 600);
+//     display: block;
+//     margin-bottom: 0;
+//     text-align: left;
+//     width: 100%;
+// }
+
+//------------------------------
+// Fonts modular scale
+//------------------------------
+
+p { 
+    // color: $text-1;
+    // font-family: $body-font;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 20px;
+    
+}
+
+// h4 {
+//     color: $text-1;
+//     font-family: $body-font;
+//     font-size: 2.0rem;
+//     line-height: 21px;
+//     font-weight: 600;
+//     letter-spacing: 0.5px;
+// }
+
+// h3 {
+//     color: $text-1;
+//     font-family: $heading-font;
+//     font-size: 2.0rem;
+//     font-weight: 500;
+//     line-height: 24px;
+// }
+
+// h2 {
+//     color: $text-2;
+//     font-family: $heading-font;
+//     font-size: 2.6rem;
+//     font-weight: 600;
+//     line-height: 22px;
+// }
+
+h1 {
+    // color: $text-1;
+    // font-family: $heading-font;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+// a {
+//     color: $links-color;
+// }
+
+//------------------------------
+// Index styles
+//------------------------------
+
+
+
+
+
+.main {
+    @include flex(column nowrap, center, flex-start);
+
+    // background-color: aqua;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px 12px 0;
+
+    &__heading {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    &__hr {
+        @extend %hr;
+        // border-top: 5px solid black;
+        width: 100%;
+    }
+}
+
+.settings {
+    margin-bottom: 25px;
+    width: 100%;
+    @include flex(row nowrap, space-between, flex-start);
+
+    &__column {
+        background-color: white;
+        width: 50%;
+
+        &--first {
+            background-color: $grey-2;
+        }
+    }
+
+    &__paragraph {
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    
+    &__number {
+        text-align: center;
+        margin-bottom: 6px;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+}
+
+
+
