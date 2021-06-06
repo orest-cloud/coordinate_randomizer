@@ -43,19 +43,20 @@ h1, h2, h3, h4, hr, ul, li, img, p, label, input {
 // Site-wide elements
 //------------------------------
 
-// button {
-//     @include font($poppins, 2.0rem, 500);
-//     background-color: $bg-fill-1;
-//     border-radius: 7px;
-//     border-style: none;
-//     color: White;
-//     cursor: pointer;
-//     height: 60px;  
+button {
+    @include font(sans-serif, 2.0rem, 500);
+    background-color: $bg-fill-1;
+    border-radius: 7px;
+    border-style: none;
+    color: White;
+    cursor: pointer;
+    height: 60px;  
+    
 
-//     &:hover {
-//         background-color: $button-hover;
-//       }    
-// }
+    &:hover {
+        background-color: $button-hover;
+      }    
+}
 
 // label {
 //     @include font($body-font, 2.0rem, 600);
@@ -114,61 +115,4 @@ h1 {
 // a {
 //     color: $links-color;
 // }
-
-//------------------------------
-// Index styles
-//------------------------------
-
-
-
-
-
-.main {
-    @include flex(column nowrap, center, flex-start);
-
-    // background-color: aqua;
-    width: 100%;
-    max-width: 600px;
-    padding: 25px 12px 0;
-
-    &__heading {
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    &__hr {
-        @extend %hr;
-        // border-top: 5px solid black;
-        width: 100%;
-    }
-}
-
-.settings {
-    margin-bottom: 25px;
-    width: 100%;
-    @include flex(row nowrap, space-between, flex-start);
-
-    &__column {
-        background-color: white;
-        width: 50%;
-
-        &--first {
-            background-color: $grey-2;
-        }
-    }
-
-    &__paragraph {
-        text-align: center;
-        margin-bottom: 6px;
-    }
-    
-    &__number {
-        text-align: center;
-        margin-bottom: 6px;
-        font-size: 1.8rem;
-        font-weight: bold;
-    }
-}
-
-
 

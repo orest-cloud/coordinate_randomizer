@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Coordinate Randomizer</title>
 </head>
 <body>
@@ -30,9 +31,28 @@
 
         <div class="main__hr"></div>
 
+        <section class="results">
+            <button class="results__button">ROLL!</button>
+
+            <!-- Contains all instances of results -->
+            <div class="results__container">
+                <div class="results__instance">
+                    <div class="results__column results__column--first">
+                        <p class="results__coordinate results__coordinate--x">X</p>
+                        <p class="results__number" id="x_number">0</p>
+                    </div>
+                    <div class="results__column">
+                        <p class="results__coordinate results__coordinate--y">Y</p>
+                        <p class="results__number" id="y_number">0</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
 
-
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>
