@@ -45,7 +45,7 @@ h1, h2, h3, h4, hr, ul, li, img, p, label, input {
 
 button {
     @include font(sans-serif, 2.0rem, 500);
-    background-color: $bg-fill-1;
+    background-color: $button-fill;
     border-radius: 7px;
     border-style: none;
     color: White;
