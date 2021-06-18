@@ -33,7 +33,6 @@ function reveal(e,current, xmin, xmax, ymin, ymax) {
 
     XCOORD.innerHTML = newXnum;
     YCOORD.innerHTML = newYnum;
-
 }
 
 ROLLBUTTON.addEventListener('click', function(e){
