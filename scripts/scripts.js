@@ -14,7 +14,7 @@ const yMaxInput = document.querySelector('#yMax');
 // const ALERT = document.querySelector("#booking-alert“)3
 // CTA.classList.remove("hide”);
 // ALERT.classList.add("hide");
-
+// good
 function reveal(e,current, xmin, xmax, ymin, ymax) {
     // let min = 2;
     // let max = 12;
