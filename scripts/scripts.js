@@ -1,4 +1,4 @@
-// script
+// imp
 
 // Identify coordinate text elements
 const XCOORD = document.querySelector('#x_number');
