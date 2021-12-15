@@ -1,4 +1,4 @@
-// scri
+// scrip
 
 // Identify coordinate text elements
 const XCOORD = document.querySelector('#x_number');
