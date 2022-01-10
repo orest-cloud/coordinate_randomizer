@@ -1,5 +1,5 @@
-// s s m t w t f s s
-// Goo
+// m
+// 
 // Identify coordinate text elements
 const XCOORD = document.querySelector('#x_number');
 const YCOORD = document.querySelector('#y_number');
