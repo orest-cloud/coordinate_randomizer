@@ -1,4 +1,4 @@
-// m t t w f f 
+// m t t w f f s 
 // 
 // Identify coordinate text elements
 const XCOORD = document.querySelector('#x_number');
